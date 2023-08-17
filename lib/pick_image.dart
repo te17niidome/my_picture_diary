@@ -8,6 +8,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/services.dart';
 
@@ -66,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: () {
                 pickImage();
+                context.go('/take_picture/result');
               },
             ),
             MaterialButton(
@@ -77,6 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: () {
                 pickImageC();
+                context.go('/take_picture/result');
               },
             ),
             SizedBox(height: 20),
