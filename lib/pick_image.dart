@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: () {
                 pickImage();
-                context.go('/result');
+                context.go('/take_picture/result');
               },
             ),
             MaterialButton(
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: () {
                 pickImageC();
-                context.go('/result');
+                context.go('/take_picture/result');
               },
             ),
             SizedBox(height: 20),
